@@ -1,0 +1,174 @@
+\documentclass{article}
+
+\usepackage{fullpage,url}
+\usepackage{csquotes}
+\usepackage[british]{babel}
+\usepackage{booktabs}
+
+\usepackage{biblatex}
+\addbibresource{cvbib.bib}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	citecolor=green,
+	urlcolor=black
+}
+
+\usepackage{enumitem}
+\setlist[itemize]{leftmargin=*}
+
+\usepackage{datenumber}
+\usepackage{fp}
+% age calculation
+\newcounter{birthdate}
+\newcounter{todaydate}
+\setmydatenumber{birthdate}{1992}{11}{02}
+\setmydatenumber{todaydate}{\the\year}{\the\month}{\the\day}
+\FPsub\diff{\thetodaydate}{\thebirthdate}
+\FPdiv\myage{\diff}{365.2425}
+\FPtrunc\myyears{\myage}{0}
+
+\newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
+
+\author{Liam Baker}
+\title{Curriculum Vitae}
+\date{\today}
+
+
+\begin{document} \maketitle
+
+
+\section{Personal Information}
+\begin{center} \begin{tabular}{ll}
+	Full name: 								& Liam Bradwin Baker \\
+	Age: 											& \myyears~years \\
+	Date of Birth:						& 2 November 1992 \\
+	Gender: 									& Male \\
+	Home and postal address:	& 91 Otello Crescent \\
+														& Eastridge \\
+														& Mitchells Plain \\
+														& Cape Town \\
+														& South Africa \\
+														& 7785 \\
+	Contact numbers:					& +27 84 278 9447 \\
+														& +27 60 507 4681 \\
+	Email:										& \email{bakerbakura@gmail.com} \\
+	Languages:								& English \\
+														& \footnotesize{Afrikaans} \\
+														& \tiny{French} \\
+\end{tabular} \end{center}
+
+
+\section{Educational History}
+\begin{center} \newcommand{\ind}{\hspace{0.4cm}} \begin{tabular}{lll}
+	\toprule
+	Primary			& Duneside Primary School (Grade 1)                           & 1999 \\
+	Education:	& Imperial Primary School (Grades 2-7)                        & 2000 - 2005 \\
+	\midrule
+	Secondary		& \href{http://www.mondalehs.co.za/}{Mondale High School}     & 2006 - 2009 \\
+	Education:	& \ind Matric certificate received                          	& \ind December 2009 \\
+	\midrule
+	Tertiary		& \href{http://www.uct.ac.za/}{University of Cape Town (UCT)} & 2010 - 2013 \\
+	Education:	& \ind BSc (Maths, Applied Maths) with distinction received 	& \ind December 2012 \\
+							& \ind BSc (Hons) (Mathematics) first class received        	& \ind December 2013 \\
+							& \href{http://www.sun.ac.za/}{Stellenbosch University (SU)}  & 2014-2015, 2018-2020 \\
+							& \ind MSc (Mathematics) cum laude received                 	& \ind December 2015 \\
+							& \ind PhD (Mathematics) received															& \ind April 2020 \\
+	\bottomrule
+\end{tabular} \end{center}
+
+
+\clearpage
+\section{Employment History}
+\begin{itemize}
+	\item Self-employed as a private tutor for secondary and tertiary students from 2007 to 2014.
+	\item Employed since December 2011 as a coach at various training and selection camps organised by the \href{http://www.samf.ac.za/}{South African Mathematics Foundation (SAMF)} for the purpose of identifying and training teams  to represent South Africa at the International Mathematical Olympiad (IMO) and Pan African Mathematical Olympiad (PAMO).
+	\item Employed by UCT's \href{http://www.math.uct.ac.za/}{Department of Mathematics and Applied Mathematics} as a Mathematics Tutor from February 2012 to November 2013.
+	\item Employed by SU's \href{http://www.sun.ac.za/english/faculty/science/Mathematics}{Department of Mathematical Sciences} as a Tutor from February to November 2015.
+	\item Employed by \href{https://www.standardbank.co.za/}{The Standard Bank of South Africa} as a Data Analyst from February to October 2016.
+	\item Employed by \href{http://www.isaziconsulting.co.za}{Isazi Consulting (Pty) Ltd.} as a Data Scientist from November 2016 to January 2018.
+	\item Employed by SU's \href{http://www.sun.ac.za/english/faculty/science/Mathematics}{Department of Mathematical Sciences} as a Contract Lecturer from April to November 2018, lecturing two large first-year engineering mathematics courses.
+\end{itemize}
+
+
+\section{Academic Achievements and Participation}
+
+\subsection{Participation in mathematical competitions}
+\begin{itemize}
+	\item Placed 11th, 3rd, 1st, and 2nd in the \href{http://www.mth.uct.ac.za/competition/}{UCT Mathematics Competition} in 2006, 2007, 2008 and 2009 respectively.
+	\item Represented South Africa at the \href{http://www.pamo-official.org/en/opam_infos_annee.php?annee=2008&edition=18}{2008 Pan African Mathematical Olympiad} held in Benin as part of a team of four, winning a silver medal and placing 5th.
+	\item Represented South Africa at the \href{http://www.imo-2008.es/}{2008 International Mathematical Olympiad} (IMO) held in Madrid, Spain as part of a team of six, achieving an Honourable Mention.
+	\item Represented South Africa at the \href{http://www.imo-official.org/year_info.aspx?year=2009}{2009 IMO} held in Bremen, Germany, winning a bronze medal.
+	\item Represented UCT at the \href{http://www.imc-math.org.uk/index.php?year=2013}{20th International Mathematics Competition for Students} (IMC) held in Blagoevgrad, Bulgaria in 2013, winning a First Prize and placing 33rd of 321 contestants.
+	\item Participated in the IMC in 2014, 2015, 2018 and 2019 as Team Leader for SU's and UCT's teams.
+	\item Participated in the Pan African Mathematical Olympiads in 2015 and 2016 as Team Leader for the South African team, in 2018 as a member of the Problem Committee and a Coordinator (marker), and in 2019 as the chairperson of the Local Organising Committee (and thus also a member of the Supervising Committee).
+	\item Participated in the International Mathematical Olympiads in 2014 as a Problem Coordinator and in 2017, 2018 and 2019 as Team Leader for the South African team.
+\end{itemize}
+
+\subsection{Bursaries, scholarships and fellowships}
+\begin{itemize}
+	\item Recipient of a Science Entrance Scholarship and a Vice-Chancellor's Scholarship from the University of Cape Town (UCT) in 2010.
+	\item Recipient of a bursary from the \href{http://www.sasolinzalofoundation.org.za/}{Sasol Inzalo Foundation} in the years 2011, 2012 and 2013.
+	\item Recipient of a Science Faculty Scholarship from UCT in the years 2011 and 2012.
+	\item Recipient of a Jacob Burlak Memorial Scholarship from UCT in 2011.
+	\item Recipient of a \href{http://www.mmuf.org/}{Mellon Mays Undergraduate Fellowship} in the 2012/2013 period.
+	\item Recipient of a Postgraduate Merit bursary from Stellenbosch University in 2014.
+	\item Recipient of a bursary from the Standard Bank 150 Programme in 2014 and 2015.
+	\item Recipient of a bursary from the \href{http://thecrossleyfoundation.co.za/}{Harry Crossley Foundation} in 2018 and 2019.
+	\item Recipient of a bursary from the \href{https://www.wits.ac.za/coe-mass/}{Centre of Excellence in Mathematical and Statistical Sciences} in 2019.
+\end{itemize}
+
+\subsection{Conferences, workshops and summer schools}
+\begin{itemize}
+	\item Participated in the inaugural \href{http://math.jacobs-university.de/summerschool/2011}{International Mathematical Summer School for Students} in 2011.
+	\item Participated in a Summer Research Colloquium held at Williams College in the US in 2012 focussing on how to conduct research, as part of the aforementioned Mellon Mays Undergraduate Fellowship.
+	\item Presented work at the Mellon Mays Undergraduate Fellowship Regional Workshop in September 2013.
+	\item Participated in the \href{http://www.heidelberg-laureate-forum.org/event_2014/}{2nd Heidelberg Laureate Forum} held in Heidelberg, Germany in 2014.
+	\item Participated in the \href{http://www.unisa.ac.za/Default.asp?Cmd=ViewContent&ContentID=96795}{57th Annual Conference of the South African Mathematical Society} in 2014.
+	\item Participated in the \href{http://www.aims.ac.za/en/research-centre/workshops-conferences/past/aims-stellenbosch-university-number-theory-conference-19-23-january-2015}{AIMS-Stellenbosch University Number Theory Conference}, 19-23 January 2015.
+	\item Participated in the \href{http://www.impa.br/opencms/pt/eventos/store/evento_1504}{inaugural International Conference in Number Theory and Physics} held at IMPA in Rio de Janeiro, Brazil from 15-26 June 2015.
+	\item Participated in the conference \href{https://dmvpisa2018.wordpress.com/}{New Developments in the Theory of Modular Forms over Function Fields} in Pisa, Italy in November 2018.
+	\item Participated in the AIMS-Stellenbosch University Number Theory Conference, 14-18 January 2019.
+\end{itemize}
+
+\subsection{Other}
+\begin{itemize}
+	\item Won class medals for MAM1000W (Mathematics 1), MAM1019H (Fundamentals of Mathematics) and MAM1043H (Modelling and Applied Computing) in 2010, with final marks of 99\%, 100\% and 102\% respectively.
+	\item Won the class medal for MAM2000W (Mathematics 2) in 2011 with a final mark of 100\%.
+	\item Won the class medal for MAM3000W (Mathematics 3) in 2012 with a final mark of 100\%.
+	\item Submitted a problem for use in the 2012 IMO, which was used as Problem 4. This is the first ever IMO problem which was submitted from an African country.
+	\item Submitted a problem for use in the 2019 IMO, which was used as Problem 1. This is the third ever IMO problem which was submitted from an African country.
+	\item Received the S2A3 medal in 2015 from the \href{http://s2a3.org.za/joomla/index.php}{Southern African Association for the Advancement of Science} for the best MSc thesis at Stellenbosch University for that year.
+	\item Appeared on Cape Town TV and CCFM multiple times each for public engagement regarding mathematics competitions.
+\end{itemize}
+
+
+\clearpage
+\section{Service}
+\begin{itemize}
+	\item From January 2012 I have volunteered at Hillsong Church South Africa, at the Century City campus from January 2012 to March 2013, at the Mitchells Plain campus from June 2012 to March 2015, at the Johannesburg campus from February 2016 to January 2018 and at the Stellenbosch campus from March 2018. I have also led a team of volunteers at Mitchells Plain every Sunday from February 2014 to July 2015, and currently at the Stellenbosch campus from March 2018.
+	\item Since September 2014 I have served as a member of the Senior Third Round committee for the \href{http://www.samf.ac.za/sa-mathematics-olympiad}{South African Mathematics Olympiad (SAMO)}. The responsibility of this committee each year is to set and mark the Third Round Senior papers of the SAMO.
+	\item I have served as a member of the African Mathematical Union's \href{http://www.africamathunion.org/amu-pamoc/}{Commission for the PAMO} representing Southern Africa since August 2017.
+	\item I have served as the regional representative for Africa on the \href{http://www.wfnmc.org/}{World Federation of National Mathematics Olympiads} since August 2018.
+\end{itemize}
+
+
+\section{Character and Academic References}
+\begin{center} \begin{tabular}{llll}
+	\toprule
+	Name								& Institution					& Relation					& Email address \\
+	\midrule
+	Prof Florian Breuer	& Univ. of Newcastle	& PhD co-supervisor	& \small{\email{Florian.Breuer@newcastle.edu.au}} \\
+	Prof Stephan Wagner	& Stellenbosch Univ.	& MSc supervisor		& \small{\email{swagner@sun.ac.za}} \\
+	Dr Dirk Basson			& Stellenbosch Univ.	& PhD supervisor		& \small{\email{djbasson@sun.ac.za}} \\
+	Prof John Webb			& Univ. of Cape Town	& Olympiads coach		& \small{\email{John.Webb@uct.ac.za}} \\
+	\bottomrule
+\end{tabular} \end{center}
+
+
+\nocite{*}
+\printbibliography[title=Publications]
+
+\end{document}
