@@ -277,3 +277,6 @@ TSWLatexianTemp*
 
 # VSCode config folder
 .vscode/**/*
+
+# not entirely sure what this is for, but I don't want it ^_^
+__latexindent_temp.tex
