@@ -1,0 +1,202 @@
+\documentclass{article}
+
+\usepackage{fullpage,url}
+\usepackage{csquotes}
+\usepackage[british]{babel}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage[cleanlook,british]{isodate}
+\usepackage{multicol}
+
+\usepackage{biblatex}
+\addbibresource{cvbib.bib}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	citecolor=green,
+	urlcolor=black
+}
+
+\usepackage{enumitem}
+% \setlist[itemize]{leftmargin=*}
+
+\usepackage{datenumber}
+\usepackage{fp}
+% age calculation
+\newcounter{birthdate}
+\newcounter{todaydate}
+\setmydatenumber{birthdate}{1992}{02}{21}
+\setmydatenumber{todaydate}{\the\year}{\the\month}{\the\day}
+\FPsub\diff{\thetodaydate}{\thebirthdate}
+\FPdiv\myage{\diff}{365.2425}
+\FPtrunc\myyears{\myage}{0}
+
+\newcommand{\email}[1]{\href{mailto:#1}{\texttt{#1}}}
+
+\author{Lisa Michelle Mhlongo Baker}
+\title{Curriculum Vitae}
+\date{\today}
+
+
+\begin{document} \maketitle
+
+
+\begin{center}
+  \begin{minipage}{0.78\textwidth}
+    I'm Lisa Michelle Mhlongo Baker, a certified professional Digital Marketer (CDMP) with a burning passion for helping businesses thrive in the digital world.
+    With over 3 years of experience, I specialise in digital marketing, content creation, branding, and business strategy.
+  \end{minipage}
+\end{center}
+
+
+\section*{Personal Information}
+\begin{center} \begin{tabular}{ll}
+	Full name: 								& Lisa Michelle Mhlongo Baker \\
+	% Age: 											& \myyears~years \\
+	Date of Birth:						& 21 February 1992 \\
+	Gender: 									& Female \\
+	Citizenship:							& South Africa \\
+	Current occupation:				& Digital Brand Marketer \\
+	Contact number:	  				& \href{tel:+27691619804}{+27 69 161 9804} \\
+	Email:										& \email{tlisamichelle@gmail.com} \\
+	Languages:								& English, Zulu \\
+\end{tabular} \end{center}
+
+
+\section*{Educational History}
+\renewcommand{\t}{\hspace{0.4cm}}
+\begin{center} \begin{tabular}{lp{0.6\textwidth}l}
+\toprule
+% Primary:
+% & Duneside Primary School (Grade 1)														& 1999 \\
+% \cmidrule{2-3}
+% & Imperial Primary School (Grades 2--7)												& 2000--2005 \\
+% \midrule
+
+Secondary:
+& New Forest High School                	                      & 2005--2009 \\
+& \t Matric certificate received								 							  & \t December 2009 \\
+\midrule
+
+Tertiary:
+& \href{http://ukzn.ac.za/}{University of KwaZulu Natal (UKZN)} & 2010--2013 \\
+& \t BCom (Management \& Economics) received			              & \t December 2013 \\
+\cmidrule{2-3}
+& \href{http://ukzn.ac.za/}{University of KwaZulu Natal (UKZN)} & 2015--2016 \\
+& \t BSocSci (Hons) (Economic History) received       						  & \t December 2016 \\
+\cmidrule{2-3}
+& \href{https://www.vegaschool.com/}{IIE Vega}	                & 2022--now \\
+& \t Master of Commerce                 								 			  & \t in progress \\
+\bottomrule
+\end{tabular} \end{center}
+
+
+% \clearpage
+\section*{Work Experience}
+\begin{tabular}{lp{0.67\textwidth}}
+  \toprule
+
+  \makecell[tl]{\\\large \textbf{Brand Manager} \\[6pt] HyperionDev \\ Cape Town (Hybrid) \\ Feb 2023--present} &
+  \begin{itemize}[topsep=0pt]
+    \item Owned visual style guides, copy guidelines, and restrictions, ensuring adherence to brand standards.
+    \item Acted as the first line of defence and quality assurance in the team.
+    Collaborate with internal and external stakeholders, especially higher education institutions' marketing teams.
+    \item Supported Production/Operations within Marketing, ensuring quality control or quality assurance of branded collateral.
+    \item Supported recruitment. Sourced, selected, and sold A Players to join the company.
+  \end{itemize} \\
+  \midrule
+
+  \makecell[tl]{\\\large \textbf{Marketing Associate} \\[6pt] HyperionDev \\ Cape Town (Hybrid) \\ Sep 2022--Feb 2023} &
+  \begin{itemize}[topsep=0pt]
+    \item Developed a monthly plan for social content and email. 
+    \item Wrote all social copy, maintaining the brand tone and vibe.
+    \item Collaborated with designers for all design requirements.
+    \item Wrote \& scheduled posts.
+    \item Managed community.
+    \item Created and maintained blog content.
+    \item Ran social media promo campaigns: Black Friday \& Price Increase.
+    \item Managed mass email marketing for monthly promos.
+  \end{itemize} \\
+  \midrule
+
+  \makecell[tl]{\\\large \textbf{Content Creator} \\[6pt] Floww.io \\ London (Remote) \\ Mar 2022--Sep 2022} &
+  \begin{itemize}[topsep=0pt]
+    \item Created content and wrote copy for B2B. 
+    \item Researched content ideas related to startups and markets. 
+    \item Collaborated with  international content and data team members.    
+  \end{itemize} \\
+  \midrule
+
+  \makecell[tl]{\\\large \textbf{Intern} \\[6pt] NT Communications \\ Durban (Hybrid) \\ Nov 2021-Feb 2022} &
+  \begin{itemize}[topsep=0pt]
+    \item Contributed ideas and content for digital marketing campaigns for raising brand awareness
+    \item Researched and developed themes, content ideas and captions for social media marketing.
+  \end{itemize} \\
+  \midrule
+
+  \makecell[tl]{\\\large \bfseries Recruitment Lead \\ \large \bfseries \& Market Researcher \\[6pt] Digify Africa \\ Johannesburg (Remote) \\ Jun 2021--Jul 2021 \\ Oct 2020--Dec 2020 \\ ~} &
+  \begin{itemize}[topsep=0pt]
+    \item Assisted Partnerships Manager with lead follow-up, meetings and database management.
+    \item Sourced, advised and managed campaign marking collateral for website and social media from digital and design teams.  Implemented lead generation process to meet weekly goals.
+  \end{itemize} \\
+
+  \bottomrule
+\end{tabular}
+
+
+\clearpage
+\section*{Skills}
+\begin{minipage}[t]{0.45\textwidth}
+  \begin{itemize}
+    \item Certified DMP
+    \item Content Marketing
+    \item Social Media Marketing
+    \item SEO 
+    \item PPC (Google Ads)
+    \item Display Advertising \& YouTube
+    \item Email Marketing
+    \item Website Optimization
+    \item Google Analytics
+    \item Digital Marketing Strategy
+  \end{itemize}
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+  \section*{Tech Stack Expertise}
+  \begin{multicols}{2}
+    \subsection*{Marketing}
+    \begin{itemize}
+      \item Sprout Social
+      \item Hubspot
+      \item Sendgrid
+      \item Intercom 
+      \item Figma
+      \item Canva
+      \item Filmora
+    \end{itemize}
+
+    \columnbreak
+    \subsection*{Operations}
+    \begin{itemize}
+      \item Google Analytics
+      \item Google Workspace
+      \item Basecamp
+      \item Asana
+      \item Notion
+    \end{itemize}
+  \end{multicols}
+\end{minipage}
+
+
+% \section*{Service}
+% \begin{itemize}
+% 	\item Since December 2011 I have volunteered as a coach at various training and selection camps organised by the \href{http://www.samf.ac.za/}{South African Mathematics Foundation (SAMF)} for the purpose of identifying and training teams to represent South Africa at the International Mathematical Olympiad (IMO) and Pan African Mathematical Olympiad (PAMO).
+% 	\item From January 2012 I have volunteered at Hillsong Church South Africa, at the Century City campus from January 2012 to March 2013, at the Mitchells Plain campus from June 2012 to March 2015, at the Johannesburg campus from February 2016 to January 2018 and at the Stellenbosch campus from March 2018. I have also led a team of volunteers at Mitchells Plain every Sunday from February 2014 to July 2015, and currently at the Stellenbosch campus from March 2018.
+% 	\item Since September 2014 I have served as a member of the Senior Third Round committee for the SAMO. The responsibility of this committee each year is to set and mark the Third Round Senior papers of the SAMO.
+% 	\item I have served as a member of the African Mathematical Union's \href{http://www.africamathunion.org/amu-pamoc/}{Commission for the PAMO} (AMUPAMOC) representing Southern Africa since August 2017.
+% 	\item I have served as the regional representative for Africa on the \href{http://www.wfnmc.org/}{World Federation of National Mathematics Olympiads} since August 2018.
+% \end{itemize}
+
+
+\end{document}
